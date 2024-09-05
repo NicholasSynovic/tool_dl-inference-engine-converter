@@ -1,36 +1,31 @@
-# Python Template Repository
+# Deep Learning Inference Engine Converter
 
-> A template repository that Python projects can inherit from to ensure tooling
-> consistency
+> Convert Safetensor models to different Deep Learning Inference Engine formats
 
 ## Table of Contents
 
-- [Python Template Repository](#python-template-repository)
+- [Deep Learning Inference Engine Converter](#deep-learning-inference-engine-converter)
   - [Table of Contents](#table-of-contents)
   - [About](#about)
-  - [Supported Tooling](#supported-tooling)
+  - [Why Safetensors?](#why-safetensors)
+  - [Supported Deep Learning Inference Engines](#supported-deep-learning-inference-engines)
 
 ## About
 
-This is a template repository that is intended to be inherited by other template
-repositories *to ensure consistent common tool deployment across languages*.
+This repository is meant to provide tools to convert a HuggingFace Safetensors
+model to different deep learning inference engines. This way, it should be
+simpler to not only get started with pre-trained deep learning models by
+leveraging tools such as Ollama, OpenVino, and vLLM and their respective APIs.
 
-This will also support *optional* tooling that services like GitHub offer in
-order to provide repository owners access to these features without them having
-to discover it themselves.
+This repository can also be thought of as a tutorial on how to convert models.
 
-## Supported Tooling
+## Why Safetensors?
 
-The following tooling is supported:
+HuggingFace Safetensors is a model format aimed at providing a secure, safe, and
+language agnostic format for sharing pre-trained models.
 
-- [Base Template Tooling](https://github.com/NicholasSynovic/template_base)
-- [Python .gitignore](.gitignore)
-- [Pypi Requirements](requirements.txt)
-  - [Poetry](.pyproject.toml)
-  - Sphinx
-- [Python pre-commit hooks](.pre-commit-config.yaml)
-  - Pyroma
-  - [isort](.isort.cfg)
-  - Black
-  - Flake8
-  - Bandit
+## Supported Deep Learning Inference Engines
+
+This repository currently supports the following deep learning inferene engines:
+
+- Ollama
